@@ -8,11 +8,18 @@
 :root{
     --primary-color:#1ABA1A;
     --secondary-color:#000000;
+    --primary-bg:#FFFFFF;
    
 }
+body{
+    background-color: #F5F5F5;
+}
+header{
+    width: 99%;
+
+}   
 .header_content{
-    width: 100vw;
-    padding: 20px;
+    padding:20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -121,6 +128,9 @@
     justify-content: center;
     align-items: center;
 }
+.search{
+    border:none;
+}
 .header_data p{
     height: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -130,10 +140,11 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
     height: 14px;
-    gap: 20px;
+    width: 55%;
+    /* gap: 20px; */
     display: flex;
-    flex-direction:row;
-    justify-content: center;
+    /* flex-direction:row; */
+    justify-content: space-evenly;
     align-items: center;
 }
 .head_ctn h3{
@@ -141,4 +152,149 @@
     font-size: 0.8rem;
     background-color: var(--primary-color);
     color: white;
+}
+
+/* first section  */
+#first_section{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: repeat(1fr);
+
+}
+.category-menu{
+    background-color: #FFFFFF;
+    margin-top:10px ;
+    margin-left: 10px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+
+}
+.category-menu:hover{
+    border: 1px solid #F5F5F5;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+.category-menu h2{
+    background-color: #FFFFFF;
+    color: #F1352B;
+    font-size: 0.85rem;
+}
+.category-menu p{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+
+.center-content{
+    width: 600px;
+    height: 200px;;
+    border: 3px solid red;
+    margin: 10px;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content:flex-start; */
+}
+.main-banner-wrapper {
+    background-image: url("slider3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(201, 194, 194);
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+.main-banner{
+    background-color: #A1A4AD;
+    /* width: 50%;
+    height:444px; */
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main-banner h1{
+    background-color: #A1A4AD;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+.main-banner p{
+    background-color: #A1A4AD;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* cards  */
+.promo-cards{
+    /* margin-top:10px; */
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.promo-content_1{
+    width: 316.98px;
+    height: 120px;
+    margin-right: 20px;
+    background-image: url("slider4.png");
+    background-size:  300px 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.promo-content_2{
+    width: 316.98px;
+    height: 120px;
+    margin-left: 20px;
+    background-image: url("slider5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right-offers{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.watch-card{
+    width: 316.98px;
+    height: 120px;
+    border: 2px solid #1ABA1A;
+    border-radius: 3px;
+    background-image: url("slider5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.camera-card{
+    width: 25vw;
+    height: 25vh;
+    border: 2px solid #1ABA1A;
+    border-radius: 3px;
+    background-image: url("slider5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
