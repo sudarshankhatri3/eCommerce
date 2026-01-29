@@ -469,13 +469,22 @@ header{
     align-items: center;
 }
 .deal-thumbnails{
+    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 } 
+.deal-image-box a{
+    width:95px;
+    height:60px;
+    margin-left: 20px;
+    background-color: #1ABA1A;
+    border: 2px solid greenyellow;
+    border-radius: 3px;
+    text-decoration: none;
 
-
+}
 .deal-side-banners{
     width:30%;
     margin-top: 80px;
