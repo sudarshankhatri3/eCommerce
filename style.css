@@ -1,8 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
     box-sizing: border-box;
+}
+body{
+      background-color: #c9c1c1;
 }
 
 :root{
@@ -10,9 +12,6 @@
     --secondary-color:#000000;
     --primary-bg:#FFFFFF;
    
-}
-body{
-    background-color: #F5F5F5;
 }
 header{
     width: 99%;
@@ -431,6 +430,7 @@ header{
 
 /* third section  */
 .deal-section{
+    background-color: #FFFFFF;
     width: 100%;
     margin: 10px;
     padding: 10px;
@@ -442,6 +442,7 @@ header{
 }
 .deal-main{
     width: 70%;
+    background-color: #FFFFFF;
 }
 
 .deal-header{
@@ -602,6 +603,8 @@ header{
 
 /* fourth section  */
 .best-seller{
+    width: 100%;
+    background-color: #FFFFFF;
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -729,12 +732,15 @@ header{
 }
 
 .featured-products{
+    width: 100%;
+    height: 550px;
     margin: 20px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    background-color: #FFFFFF;
 }
 .featured-products__header{
     margin-top: 20px;
@@ -797,4 +803,61 @@ header{
     .product-card-list{
         flex-wrap: wrap;
     }
+}
+
+
+.category-showcase{
+    width: 100%;
+    margin: 20px;
+    background-color: #FFFFFF;
+}
+.category-first-showcase{
+    width:100%;
+    gap: 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.category-showcase__header{
+    margin: 20px;
+    gap: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.category-showcase__title{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.category-showcase__view-all{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.category-showcase__content{
+    margin: 20px;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+}
+.featured-product{
+    width: 242px;
+    height: 201px;
+    padding: 20px;
+}
+.category-grid{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:600px){
+    .category-first-showcase{
+        flex-wrap: wrap;
+    }
+    .category-showcase__header{
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
 }
