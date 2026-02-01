@@ -157,6 +157,7 @@ header{
 
 /* first section  */
 #first_section{
+    background-color:#FFFFFF;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: repeat(1fr);
